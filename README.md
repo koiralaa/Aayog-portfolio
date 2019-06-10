@@ -1,6 +1,6 @@
 # Aayog-portfolio
 
-#### A simple Web app which will feature introduction and about page for Aayog Koirala.
+#### A simple Web app which will feature introduction, codes and about page for Aayog Koirala.
 ## Site tabs
 ### Introduction
 Basic info -- summary
