@@ -3,7 +3,7 @@ Ideas
 Making the codes section dynamic.
 
 Thinking big --> Find way to add code section directly from GitHub
-
+Fetch code from GitHub and 'copy' it to html? or get files from GitHub (clone) and add the canvases to sections in code?
 Code section would look like 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
 ---------------------------------                                 -
@@ -12,7 +12,7 @@ Code section would look like
 -------------DEMO----------------                 &&              -
 ---------------------------------                 HOW             -
 ---------------------------------                                 -
----------------------------------  ** What's interesting about it-
+---------------------------------  ** What's interesting about it -
 ---------------------------------                                 -
 ---------------------------------                                 -
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
