@@ -2,8 +2,20 @@ Ideas
 
 Making the codes section dynamic.
 
-Thinking big --> Find way to add code section directly from GitHub
-Fetch code from GitHub and 'copy' it to html? or get files from GitHub (clone) and add the canvases to sections in code?
+store all the sketches as individual javascript files in a folder -> /Sketches
+
+In the Angular controller, define models as
+    ``` $scope.sketches =[
+         { name : "sketch1.js",
+            description : "This sketch shows a simple example of balls jumping up and down"
+         },
+         { name : "sketch2.js",
+            description : "This sketch shows a another example of balls jumping up and down"
+         }
+    ]; ```
+         
+    
+
 Code section would look like 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
 ---------------------------------                                 -
@@ -16,3 +28,6 @@ Code section would look like
 ---------------------------------                                 -
 ---------------------------------                                 -
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
+
+//Thinking big --> Find way to add code section directly from GitHub
+//Fetch code from GitHub and 'copy' it to html? or get files from GitHub (clone) and add the canvases to sections in code?
