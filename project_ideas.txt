@@ -8,7 +8,7 @@ store all the sketches as individual javascript files in a folder -> /Sketches
         $scope.sketches =[
             { name : "sketch1.js",
                 description : "This sketch shows a simple example of balls jumping up and down"
-                dependencies : {"additional.js", "another.js", "onemore.js"}
+                dependencies : ["additional.js", "another.js", "onemore.js"]
             },
             { name : "sketch2.js",
                 description : "This sketch shows a another example of balls jumping up and down"
@@ -27,7 +27,7 @@ store all the sketches as individual javascript files in a folder -> /Sketches
             </li>
             </ul>
 
-            
+
 Code section would look like 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
 ---------------------------------                                 -
