@@ -4,18 +4,30 @@ Making the codes section dynamic.
 
 store all the sketches as individual javascript files in a folder -> /Sketches
 
-In the Angular controller, define models as
-    ``` $scope.sketches =[
-         { name : "sketch1.js",
-            description : "This sketch shows a simple example of balls jumping up and down"
-         },
-         { name : "sketch2.js",
-            description : "This sketch shows a another example of balls jumping up and down"
-         }
-    ]; ```
-         
-    
+    In the Angular controller, define models as
+        $scope.sketches =[
+            { name : "sketch1.js",
+                description : "This sketch shows a simple example of balls jumping up and down"
+                dependencies : {"additional.js", "another.js", "onemore.js"}
+            },
+            { name : "sketch2.js",
+                description : "This sketch shows a another example of balls jumping up and down"
+            }
+        ]; 
+            
+    The Angular HTML should then have:
+            <ul>
+            <li ng-repeat="sketch in sketches">
+                <script type="text/javascript" src="{{sketch.name}}"></script>
+                <ul>
+                <li ng-repeat="file in sketch.dependencies">
+                <script type="text/javascript" src="{{file}}"></script>
+                </li>
+                <p>{{sketch.description}}</p>
+            </li>
+            </ul>
 
+            
 Code section would look like 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
 ---------------------------------                                 -
