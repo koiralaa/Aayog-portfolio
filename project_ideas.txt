@@ -4,19 +4,13 @@ Making the codes section dynamic.
 
 store all the sketches as individual javascript files in a folder -> /Sketches
 
-    In the Angular controller, define models as
-        $scope.sketches =[
-            { name : "sketch1.js",
-                description : "This sketch shows a simple example of balls jumping up and down"
-                dependencies : ["additional.js", "another.js", "onemore.js"]
-            },
-            { name : "sketch2.js",
-                description : "This sketch shows a another example of balls jumping up and down"
-            }
-        ]; 
-            
-    The Angular HTML should then have:
-            <ul>
+/* sketch.component.js */
+
+    angular.
+  module('sketchApp').
+  component('sketch', {
+    template:
+        <ul>
             <li ng-repeat="sketch in sketches">
                 <script type="text/javascript" src="{{sketch.name}}"></script>
                 <ul>
@@ -25,7 +19,23 @@ store all the sketches as individual javascript files in a folder -> /Sketches
                 </li>
                 <p>{{sketch.description}}</p>
             </li>
-            </ul>
+            </ul>,
+    controller: function SketchListController() {
+     this.sketches = [
+            { 
+                name : "sketch1.js",
+                description : "This sketch shows a simple example of balls jumping up and down",
+                dependencies : ["additional.js", "another.js", "onemore.js"]
+            },
+            { 
+                name : "sketch2.js",
+                description : "This sketch shows a another example of balls jumping up and down",
+                dependencies : []
+            }
+        ]; 
+    }
+  });
+
 
 
 Code section would look like 
