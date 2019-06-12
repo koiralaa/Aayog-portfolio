@@ -3,7 +3,7 @@
 #### A simple Web app which will feature introduction, codes and about page for Aayog Koirala.
 ## Programming Languages, Frameworks and tools
 <ol>
-    <li> AngularJS </li>
+    <li> Angular 8 </li>
     <li> JavaScript</li>
     <li> HTML</li>
     <li> CSS -- Bootstrap</li>
