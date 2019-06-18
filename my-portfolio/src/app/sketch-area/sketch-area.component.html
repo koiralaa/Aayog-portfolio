@@ -1,10 +1,13 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
 
 <div class="sketcharea">
   <h2>Sketches</h2>
+  <div *ngIf="sketches">
   <div *ngFor="let sketch of sketches">
+    <div [id]="sketch.id">
       <script [src]="sketch.filename"></script>
+    </div>
     <p>{{sketch.id}}. <span>{{sketch.name}}</span></p>
   </div>
+</div>
 </div>
 
