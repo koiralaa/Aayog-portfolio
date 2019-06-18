@@ -1,5 +1,6 @@
 function setup() {
-    createCanvas(480, 320);
+    var canvas = createCanvas(480, 320);
+    canvas.parent('1');
     x = width/2;
     y = height/2;
     xSpeed = 1;
