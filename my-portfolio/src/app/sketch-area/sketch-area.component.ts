@@ -1,8 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { Sketch } from '../sketch';
-import { SKETCHES } from '../mock-sketches'
 import * as p5 from 'p5'
-import { randomBytes } from 'crypto';
 
 @Component({
   selector: 'app-sketch-area',
