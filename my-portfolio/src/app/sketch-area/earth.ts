@@ -5,7 +5,7 @@ export class Earth{
         var isRound;
         p.setup= () => {
           img = p.loadImage("/assets/images/earth_texture.jpg");
-          p.createCanvas(640, 480, p.WEBGL);
+          p.createCanvas(p.windowWidth/2, p.windowHeight, p.WEBGL);
           x = 0;
           y = 20;
           isRound = true;

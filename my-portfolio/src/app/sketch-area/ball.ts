@@ -2,7 +2,7 @@ export class Ball{
     public sketch(p: any) {
         var x, y, xSpeed, ySpeed;
         p.setup= () => {
-          p.createCanvas(640, 480);
+          p.createCanvas(p.windowWidth/2, p.windowHeight);
           x = p.width/2;
           y = p.height/2;
           xSpeed = 10;
