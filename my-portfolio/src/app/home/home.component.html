@@ -1,0 +1,13 @@
+<div class="center_image">
+    <img alt="Background" class="main_image" src="{{picture}}">
+  <div (click)="toggle()" class="navicon noselect">
+    &#9776;
+  </div>
+  <span *ngIf="showMenu" class="navicon menu">
+    <ul style="list-style-type: none;">
+      <li *ngFor="let item of menu">
+        <a routerLink="{{ item.link }}">{{ item.name }} </a>
+      </li>
+    </ul>
+  </span>
+</div>
